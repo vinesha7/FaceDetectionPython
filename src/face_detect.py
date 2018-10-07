@@ -29,7 +29,7 @@ faces = faceCascade.detectMultiScale(
     flags = cv2.CASCADE_SCALE_IMAGE
 )
 
-#s_img = cv2.imread("small_test.jpg")
+s_img = cv2.imread("small_test.jpg")
 
 x_offset=y_offset=50
 
@@ -37,7 +37,7 @@ x_offset=y_offset=50
 # Draw a rectangle around the faces
 for (x, y, w, h) in faces:
     cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
-    #image[y:y+s_img.shape[0], x:x+s_img.shape[1]] = s_img
+    image[y:y+s_img.shape[0], x:x+s_img.shape[1]] = s_img
     
 
     
