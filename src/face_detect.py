@@ -31,8 +31,6 @@ faces = faceCascade.detectMultiScale(
 
 s_img = cv2.imread("small_test.jpg")
 
-x_offset=y_offset=50
-
 
 # Draw a rectangle around the faces
 for (x, y, w, h) in faces:
